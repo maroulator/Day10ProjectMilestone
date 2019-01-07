@@ -1,0 +1,29 @@
+<!doctype html>
+<title>A short quiz</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+<div class=page>
+  <h1>Ticker LookUp App</h1>
+  <div class=metanav>
+
+<h4>
+Please enter desired ticker symbol and price selections.
+</h4>
+
+<form id='userinfoform_lulu' method='post' action='index_lulu' > <!-- action is the URL you want to move to next-->
+   <p>
+   Ticker: <input type='text' name='ticker' />
+   </p>
+   
+   <p>
+   <input type='checkbox' name='price 1' value="High">  High  <br />
+   <input type='checkbox' name='price 2' value="Low">   Low   <br />
+   <input type='checkbox' name='price 3' value="Open">  Open  <br />
+   <input type='checkbox' name='price 4' value="Close"> Close <br />
+   </p>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>
